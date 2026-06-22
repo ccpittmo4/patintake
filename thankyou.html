@@ -1,0 +1,57 @@
+ <!--
+Program name: thankyou.html
+Author: Chelsey Pittmon
+Date created: June 21
+Date last edited: June 21
+Version: 1.2
+Description: Form Action Page. -->
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+     <meta charset="utf-8">
+        <title> Registration Form </title>
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+      <div id = "header">
+      <table width="100%">
+      <tr>     
+        <td>                
+         <img
+        id = "Logo" src="/Medical-Logo-Graphics-1-50.jpg" width="250" height="150" alt="Once Choice Medical">
+        </td>
+     <td> One Choice Medical </td>
+     <td id="date1" valign="top" align="right">Current Date: <span id="today">Date goes here </span> </td>
+      </tr>
+      </table>
+      </div>
+
+<div id="footer">
+  <p> Thank you for your submission and for visiting One Choice Medical. 
+    <br><br>Phone: 233-221-2223
+    <br><br> Email: patient@OneChoiceMedical.com
+    <br><br>
+        <img
+        id = "Logo" src="/Medical-Logo-Graphics-1-50.jpg"
+        width="50" height="50" alt="Once Choice Medical">
+      </div> </p>
+
+<form action="patient-form.html"
+    <label for="satisfaction">
+     How was your visit? (1/10) </label>
+<input type="range" id=satisfaction 
+name=satisfaction
+ min="1" max="10"</input>
+   <input type="submit">
+
+</div>
+ <script>
+    document.getElementById("today").innerHTML = new Date().toLocaleDateString();
+</script>
+
+</form>
+</body>
+</html>
